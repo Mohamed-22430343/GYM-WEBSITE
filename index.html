@@ -3,10 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Gym Website</title>
+    <link rel="stylesheet" href="/css/">
 </head>
 <body>
-   <script src="script.js/index.js"></script>
+    <header>
+        <h1>Welcome to Our Gym</h1>
+        <h2>LIFE TIME Gym</h2>
+        <nav>
+            <ul>
+                <li><a href="#classes">Classes</a></li>
+                <li><a href="#trainers">Trainers</a></li>
+                <li><a href="#membership">Membership</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="classes">
+        <h2>Our Classes</h2>
+        <img src="img/gym workout.jpg" alt="Gym Workout" class="gym-banner">
+        <div id="classes-container"></div>
+    </section>
+    <section class="yoga-section">
+        <h2>Yoga Classes</h2>
+        <p>Join our relaxing and refreshing yoga sessions.</p>
+    </section>
+<img src="img/yoga.jpeg  " alt="Yoga" class="yoga-banner">
+
+    <footer>
+        <p>&copy; 2025 Gym Website. All rights reserved.</p>
+    </footer>
+    
+    <script src="/script.js/index.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Gym</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <img src="img/logo.jpg" alt="/home/" class="logo"> 
+        <h1>Join Life time gym</h1>
+        <nav>
+
+            <section id="classes">
+                <h2>Our Classes</h2>
+                <img src="img/gym workout 2.webp" alt="Gym Workout" class="gym-banner">
+                <div id="classes-container">
+                    <div class="gym-class">
+                        <img src="img/weightlifting.jpg" alt="Weightlifting">
+                        <h3>Weightlifting</h3>
+                        <p>Build strength and power with our expert-led weightlifting sessions.</p>
+                        <button class="join-btn">Join Now</button>
+                    </div>
+                </div>
+            </section>
+            
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="signup-section">
+        <img src="img/fitnes.jpeg" alt="Fitness" class="signup-banner"> 
+        <h2>Create Your Account</h2>
+        <form id="signup-form">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <button type="submit">Sign Up</button>
+        </form>
+
+        <p>Already have an account? <a href="#">Log in</a></p>
+    </section>
+
+    <script src="signup.js"></script>
 </body>
 </html>
